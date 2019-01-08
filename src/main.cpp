@@ -15,7 +15,7 @@ static const char* password = "pass";
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
-
+  delay(500);
   // WPA2 Connection starts here
   // Setting ESP into STATION mode only (no AP mode or dual mode)
     wifi_set_opmode(STATION_MODE);
