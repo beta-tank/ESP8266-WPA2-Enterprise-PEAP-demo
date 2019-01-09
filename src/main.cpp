@@ -1,9 +1,7 @@
 #include <Arduino.h>
 #include "ESP8266WiFi.h"
-extern "C" {
 #include "user_interface.h"
 #include "wpa2_enterprise.h"
-}
 
 // SSID to connect to
 static const char* ssid = "ssid";
@@ -30,6 +28,7 @@ void setup() {
     wifi_station_set_enterprise_username((uint8*)username, strlen(username));
     wifi_station_set_enterprise_password((uint8*)password, strlen(password));
     wifi_station_connect();
+
   // WPA2 Connection ends here
 
   // Normal Connection starts here
@@ -45,7 +44,7 @@ void setup() {
   Serial.println("Waiting for connection and IP Address from DHCP");
   while (WiFi.status() != WL_CONNECTED) {
     delay(2000);
-    Serial.print(".");
+    Serial.print(WiFi.status());
   }
   Serial.println("");
   Serial.println("WiFi connected");
