@@ -12,7 +12,7 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "C:/Dropbox/Development/Arduino/Samples/WPA2 Enterprise PEAP/.pioenvs/nodemcuv2/firmware.elf",
+            "executable": "c:/Dropbox/Development/Arduino/Samples/ESP8266-WPA2-Enterprise-PEAP-demo/.pioenvs/nodemcuv2/firmware.elf",
             "toolchainBinDir": "",
             "preLaunchTask": {
                 "type": "PlatformIO",
@@ -24,7 +24,7 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "C:/Dropbox/Development/Arduino/Samples/WPA2 Enterprise PEAP/.pioenvs/nodemcuv2/firmware.elf",
+            "executable": "c:/Dropbox/Development/Arduino/Samples/ESP8266-WPA2-Enterprise-PEAP-demo/.pioenvs/nodemcuv2/firmware.elf",
             "toolchainBinDir": "",
             "internalConsoleOptions": "openOnSessionStart"
         }
